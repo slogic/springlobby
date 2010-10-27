@@ -14,6 +14,7 @@ rpm/.gitignore
 *.vcproj.*.user
 *.suo
 *.ncb
+*.sln
 *.o
 po/*
 Makefile
@@ -41,3 +42,5 @@ test/*
 src/images/updater/*
 *.fbp.bak
 CMakeLists.txt.user*
+build/vstudio9/Debug/*
+build/vstudio9/Release/*
