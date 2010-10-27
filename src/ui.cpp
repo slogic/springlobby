@@ -1420,7 +1420,7 @@ void Ui::CheckForUpdates()
         {
             wxString command = _T("\"") + wxPathOnly( wxStandardPaths::Get().GetExecutablePath() ) + wxFileName::GetPathSeparator() + _T("springlobby_updater.exe\"");
             wxString params = _T("-f \"") + wxStandardPaths::Get().GetExecutablePath() + _T("\"") + _T(" -r ") +  latestVersion  ;
-            if( WinExecute( command, params ) > 0 ) {
+            if( WinExecute( command, params ) ) {
                 //returned pid > 0 -> proc started successfully
                 // now close this instance immeadiately
                 wxCloseEvent dummy;
