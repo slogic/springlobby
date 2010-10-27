@@ -29,12 +29,12 @@ double LevenshteinDistance(wxString s, wxString t)
         for (int j = 1; j <= n; ++j)
         {
             const int cost = (s[i - 1] != t[j - 1]);
-            D(i,j) = min(D(i-1,j) + 1, // deletion
+			D(i,j) = min<int>(D(i-1,j) + 1, // deletion
                          D(i,j-1) + 1, // insertion
                          D(i-1,j-1) + cost); // substitution
         }
     }
-    double d = (double) D(m,n) / std::max(m, n);
+    double d = (double) D(m,n) / std::max<int>(m, n);
     wxLogMessage( _T("LevenshteinDistance('%s', '%s') = %g"), s.c_str(), t.c_str(), d );
     return d;
 #undef D

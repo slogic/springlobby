@@ -12,6 +12,10 @@
 #include <wx/log.h>
 #include <stdexcept>
 
+#ifdef WIN32
+	#include <errno.h>
+#endif
+
 #include "chatlog.h"
 #include "settings.h"
 #include "utils/conversion.h"
@@ -171,16 +175,16 @@ pread(int fd, void* buffer, size_t size, off_t offset)
     errno = 0;
     if ( offset < 0 )
     {
-	errno = EINVAL;
-	return -1;
+		errno = EINVAL;
+		return -1;
     }
     else if ( lseek(fd, offset, SEEK_SET) != offset )
     {
-	return -1;
+		return -1;
     }
     else
     {
-	return read(fd, buffer, size);
+		return read(fd, buffer, size);
     }
 }
 #endif	/* WIN32 */
@@ -283,7 +287,7 @@ void ChatLog::FillLastLineArray()
 	int fd ( open(GetCurrentLogfilePath().mb_str(), O_RDONLY) );
     if ( fd < 0 )
     {
-	wxLogError(_T("%s: failed to open log file."), __PRETTY_FUNCTION__);
+	wxLogError(_T("%s: failed to open log file."), __FUNCTION__);
         return;
     }
     size_t num_lines ( sett().GetAutoloadedChatlogLinesCount() );
