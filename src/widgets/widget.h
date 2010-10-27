@@ -33,12 +33,13 @@ struct ExtendedInfo
     Images images;
 };
 
-struct Widget
+class Widget
 {
-    public:
-        Widget();
-        virtual ~Widget();
-    long w_id;
+public:
+    Widget();
+    virtual ~Widget();
+    
+	long w_id;
     long n_id;
     wxString name;
     wxString description;
