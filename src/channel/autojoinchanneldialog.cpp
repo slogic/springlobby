@@ -31,8 +31,7 @@ AutojoinChannelDialog::AutojoinChannelDialog( wxWindow* parent )
 	                                 wxTE_MULTILINE | wxTE_DONTWRAP );
 	wxSizer *buttonSizer= CreateButtonSizer( wxOK|wxCANCEL|wxALIGN_CENTRE );
 	wxStaticLine* seperator = new wxStaticLine( this );
-	wxStaticText* hint =    new wxStaticText( this, -1, _( "Add one channel per line like this:\n"
-	        "channelname password\n(passwords for existing channels are not displayed)" ) );
+	wxStaticText* hint = new wxStaticText( this, -1, _( "Add one channel per line like this:\nchannelname password\n(passwords for existing channels are not displayed)" ) );
 	textSizer->Add( hint, 0, wxEXPAND|wxALL|wxALIGN_CENTRE, 10 );
 	textSizer->Add( seperator );
 	textSizer->Add( m_channel_list, 1,  wxEXPAND|wxALL|wxALIGN_CENTRE, 10 );

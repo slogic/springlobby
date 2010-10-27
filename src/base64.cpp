@@ -31,15 +31,7 @@ const wxChar fillchar = '=';
 
                         // 00000000001111111111222222
                         // 01234567890123456789012345
-static wxString     cvt = _T("ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-
-                        // 22223333333333444444444455
-                        // 67890123456789012345678901
-                          "abcdefghijklmnopqrstuvwxyz"
-
-                        // 555555556666
-                        // 234567890123
-                          "0123456789+/");
+static wxString     cvt = _T("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/");
 
 wxString wxBase64::Encode(const wxString& data)
 {

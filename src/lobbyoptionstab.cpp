@@ -139,8 +139,7 @@ LobbyOptionsTab::LobbyOptionsTab(wxWindow* parent)
     m_main_sizer->Add( m_show_tooltips_sizer, 0, wxALL, 5 );
 
     wxStaticBoxSizer* m_complete_method_sizer = new wxStaticBoxSizer ( wxVERTICAL, this, _("Tab completion method") );
-    m_complete_method_label = new wxStaticText ( this, -1, _("\"Match exact\" will complete a word if there is one and only one match.\n"
-        "\"Match nearest\" will select the (first) match that has closest Levenshtein distance") );
+    m_complete_method_label = new wxStaticText ( this, -1, _("\"Match exact\" will complete a word if there is one and only one match.\n\"Match nearest\" will select the (first) match that has closest Levenshtein distance") );
     m_complete_method_old = new wxRadioButton( this, -1, _("Match exact"), wxDefaultPosition, wxDefaultSize, wxRB_GROUP );
     m_complete_method_new = new wxRadioButton( this, -1, _("Match nearest"), wxDefaultPosition, wxDefaultSize );
     m_complete_method_old->SetValue( sett().GetCompletionMethod() == Settings::MatchExact );
