@@ -1109,6 +1109,14 @@
 				Name="updater"
 				>
 				<File
+					RelativePath="..\..\src\updater\updatehelper.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\src\updater\updatehelper.h"
+					>
+				</File>
+				<File
 					RelativePath="..\..\src\updater\updater.cpp"
 					>
 				</File>
@@ -1137,11 +1145,43 @@
 					>
 				</File>
 				<File
+					RelativePath="..\..\src\utils\controls.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\src\utils\controls.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\src\utils\conversion.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\src\utils\conversion.h"
+					>
+				</File>
+				<File
 					RelativePath="..\..\src\utils\curlhelper.cpp"
 					>
 				</File>
 				<File
 					RelativePath="..\..\src\utils\curlhelper.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\src\utils\customdialogs.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\src\utils\customdialogs.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\src\utils\debug.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\src\utils\debug.h"
 					>
 				</File>
 				<File
@@ -1194,6 +1234,30 @@
 				</File>
 				<File
 					RelativePath="..\..\src\utils\plasmaresourceinfo.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\src\utils\platform.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\src\utils\platform.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\src\utils\sltipwin.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\src\utils\sltipwin.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\src\utils\stack.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\src\utils\stack.h"
 					>
 				</File>
 				<File
@@ -1385,6 +1449,198 @@
 					>
 				</File>
 			</Filter>
+			<Filter
+				Name="settings++"
+				>
+				<File
+					RelativePath="..\..\src\settings++\ctrlconstants.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\src\settings++\frame.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\src\settings++\frame.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\src\settings++\helpmenufunctions.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\src\settings++\helpmenufunctions.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\src\settings++\panel_pathoption.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\src\settings++\panel_pathoption.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\src\settings++\presets.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\src\settings++\se_utils.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\src\settings++\se_utils.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\src\settings++\tab_abstract.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\src\settings++\tab_abstract.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\src\settings++\tab_audio.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\src\settings++\tab_audio.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\src\settings++\tab_quality_video.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\src\settings++\tab_quality_video.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\src\settings++\tab_render_detail.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\src\settings++\tab_render_detail.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\src\settings++\tab_simple.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\src\settings++\tab_simple.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\src\settings++\tab_ui.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\src\settings++\tab_ui.h"
+					>
+				</File>
+				<Filter
+					Name="hotkeys"
+					>
+					<File
+						RelativePath="..\..\src\settings++\hotkeys\AddSelectionCmdDlg.cpp"
+						>
+					</File>
+					<File
+						RelativePath="..\..\src\settings++\hotkeys\AddSelectionCmdDlg.h"
+						>
+					</File>
+					<File
+						RelativePath="..\..\src\settings++\hotkeys\commandlist.cpp"
+						>
+					</File>
+					<File
+						RelativePath="..\..\src\settings++\hotkeys\commandlist.h"
+						>
+					</File>
+					<File
+						RelativePath="..\..\src\settings++\hotkeys\CommandOrderDlg.cpp"
+						>
+					</File>
+					<File
+						RelativePath="..\..\src\settings++\hotkeys\CommandOrderDlg.h"
+						>
+					</File>
+					<File
+						RelativePath="..\..\src\settings++\hotkeys\hotkey_panel.cpp"
+						>
+					</File>
+					<File
+						RelativePath="..\..\src\settings++\hotkeys\hotkey_panel.h"
+						>
+					</File>
+					<File
+						RelativePath="..\..\src\settings++\hotkeys\hotkey_parser.cpp"
+						>
+					</File>
+					<File
+						RelativePath="..\..\src\settings++\hotkeys\hotkey_parser.h"
+						>
+					</File>
+					<File
+						RelativePath="..\..\src\settings++\hotkeys\HotkeyException.h"
+						>
+					</File>
+					<File
+						RelativePath="..\..\src\settings++\hotkeys\HotkeyForms.cpp"
+						>
+					</File>
+					<File
+						RelativePath="..\..\src\settings++\hotkeys\HotkeyForms.h"
+						>
+					</File>
+					<File
+						RelativePath="..\..\src\settings++\hotkeys\HotkeyTypes.cpp"
+						>
+					</File>
+					<File
+						RelativePath="..\..\src\settings++\hotkeys\HotkeyTypes.h"
+						>
+					</File>
+					<File
+						RelativePath="..\..\src\settings++\hotkeys\KeynameConverter.cpp"
+						>
+					</File>
+					<File
+						RelativePath="..\..\src\settings++\hotkeys\KeynameConverter.h"
+						>
+					</File>
+					<File
+						RelativePath="..\..\src\settings++\hotkeys\SpringDefaultProfile.cpp"
+						>
+					</File>
+					<File
+						RelativePath="..\..\src\settings++\hotkeys\SpringDefaultProfile.h"
+						>
+					</File>
+					<File
+						RelativePath="..\..\src\settings++\hotkeys\wxSpringCommand.cpp"
+						>
+					</File>
+					<File
+						RelativePath="..\..\src\settings++\hotkeys\wxSpringCommand.h"
+						>
+					</File>
+				</Filter>
+			</Filter>
+			<Filter
+				Name="wxkeybinder"
+				>
+				<File
+					RelativePath="..\..\src\wxkeybinder\keybinder.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\src\wxkeybinder\keybinder.h"
+					>
+				</File>
+			</Filter>
 		</Filter>
 		<Filter
 			Name="Заголовочные файлы"
@@ -1397,6 +1653,10 @@
 			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav"
 			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
 			>
+			<File
+				RelativePath="..\..\src\settings++\settings.rc"
+				>
+			</File>
 			<File
 				RelativePath="..\..\src\springlobby.rc"
 				>
